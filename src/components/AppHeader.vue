@@ -67,13 +67,15 @@ export default {
 <style lang="scss" scoped>
 
 .header-section{
+    width: 100%;
     height: 700px;
-    ;
+    
 
     .up-header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
         height: 8%;
         background-color: #353637;
         color: rgba(211, 211, 211, 0.733);
@@ -83,7 +85,8 @@ export default {
     
     .bottom-header{
         position: relative;
-        height: 95%;
+        width: 100%;
+        height: 92%;
 
         .jumbo-container{
         position: relative;
@@ -91,7 +94,10 @@ export default {
         
 
             img{
-                height: 100%;
+                width: 100%;
+                
+               
+                
             }
             
             .up-container{
@@ -160,7 +166,8 @@ export default {
                 }
                 
                 .btn-container{
-    
+                    padding: 15px;
+                    
                     button{
                         padding: 10px 20px;
                         background-color: #7abc64;
@@ -169,8 +176,16 @@ export default {
                         font-weight: bold;
                         color: white;
                         border-radius: 20px;
+                        cursor: pointer;
                     }
                 }
+                    
+                .btn-container:hover{
+                    background-color: #7abc6479;
+                    cursor: pointer;
+                }
+    
+
             }
     
             .center-container{
@@ -257,6 +272,7 @@ export default {
     }
 
 }
+</style>
 
         
 
@@ -271,5 +287,3 @@ export default {
             
             
 
-
-</style>
