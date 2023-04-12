@@ -3,6 +3,7 @@ import FormSection from './FormSection.vue';
 import CourseInfoSection from './CourseInfoSection.vue';
 import CardsSection from './CardsSection.vue';
 import Testimonials from './Testimonials.vue';
+import News from './News.vue';
 
 export default {
     data(){
@@ -18,6 +19,7 @@ export default {
         CourseInfoSection,
         CardsSection,
         Testimonials,
+        News,
     }
 }
 
@@ -32,6 +34,8 @@ export default {
 <CardsSection></CardsSection>
 
 <Testimonials></Testimonials>
+
+<News></News>
 
 </template>
 
