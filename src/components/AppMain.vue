@@ -1,5 +1,6 @@
 <script>
 import FormSection from './FormSection.vue';
+import CourseInfoSection from './CourseInfoSection.vue';
 
 export default {
     data(){
@@ -12,6 +13,7 @@ export default {
 
     components : {
         FormSection,
+        CourseInfoSection,
     }
 }
 
@@ -20,6 +22,8 @@ export default {
 <template>
 
 <FormSection :number="number"></FormSection>
+
+<CourseInfoSection></CourseInfoSection>
 
 </template>
 
