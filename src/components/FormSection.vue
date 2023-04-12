@@ -30,12 +30,16 @@ export default {
         <div class="form-container">
             <h2>{{ formTitle }}</h2>
             <div>When you make a block booking with us your first lesson is included free.</div>
-            <input type="text" placeholder="Your Name*">
+            <div class="custom-input">
+                <input type="text" placeholder="Your Name*">
+                <img src="/images/image.png" alt="">
+            </div>
             <input type="email" placeholder="Email*">
             <input type="number" placeholder="Telephone">
             <input type="text" placeholder="Location">
             <div><button>request a callback</button></div>
         </div>
+
 
     </div>
     
@@ -98,6 +102,17 @@ export default {
             background-color: white;
             box-shadow: 4px 10px 30px lightgray;
 
+            .custom-input{
+                position: relative;
+                width: 100%;
+
+                img{
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                }
+            }
 
             h2{
                 color: #7abc64;
@@ -117,6 +132,13 @@ export default {
                 padding: 10px 20px;
                 border-radius: 20px;
                 border: none;
+                letter-spacing: 2px;
+                transition: .5s;
+            }
+
+            div button:hover{
+                cursor: pointer;
+                transform: scale(1.1);
             }
         }
     }

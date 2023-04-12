@@ -1,6 +1,8 @@
 <script>
 import FormSection from './FormSection.vue';
 import CourseInfoSection from './CourseInfoSection.vue';
+import CardsSection from './CardsSection.vue';
+import Testimonials from './Testimonials.vue';
 
 export default {
     data(){
@@ -14,6 +16,8 @@ export default {
     components : {
         FormSection,
         CourseInfoSection,
+        CardsSection,
+        Testimonials,
     }
 }
 
@@ -24,6 +28,10 @@ export default {
 <FormSection :number="number"></FormSection>
 
 <CourseInfoSection></CourseInfoSection>
+
+<CardsSection></CardsSection>
+
+<Testimonials></Testimonials>
 
 </template>
 

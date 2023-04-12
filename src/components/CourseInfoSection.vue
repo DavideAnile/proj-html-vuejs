@@ -39,7 +39,7 @@ export default {
         <div v-for="card in cards" class="card">
             <div class="img-container"><img :src="card.img" alt=""></div>
             <h3>{{ card.title }}</h3>
-            <div><button>Learn more</button></div>
+            <div class="btn-container"><button>Learn more</button></div>
         </div>
         
     </div>
@@ -94,6 +94,13 @@ export default {
             border: none;
             text-transform: uppercase;
             font-weight: bold;
+            letter-spacing: 2px;
+            transition: .5s;
+        }
+
+        div button:hover{
+            transform: scale(1.1);
+            cursor: pointer;
         }
 
         #corner{
@@ -137,18 +144,35 @@ export default {
                 color: rgba(27, 27, 129, 0.418);
             }
 
-            div button{
-                padding: 7px 15px;
-                border: 2px solid rgba(27, 27, 129, 0.418);
-                border-radius: 20px;
-                color: rgba(27, 27, 129, 0.418);
-                text-transform: uppercase;
-            }
+            .btn-container{
 
+                padding: 15px 20px;
+                transition: .5s;
+                
+                
+                button{
+                    
+                    padding: 7px 15px;
+                    border: 2px solid rgba(27, 27, 129, 0.418);
+                    border-radius: 20px;
+                    color: rgba(27, 27, 129, 0.418);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    transition: .5s;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                }
+            } 
+                
+            .btn-container:hover{
+                background-color: rgba(84, 84, 233, 0.774);
+                cursor: pointer;
+            }    
             
         }
     }
 }
+            
 
 #driving-triangle{
     width: 100%;
