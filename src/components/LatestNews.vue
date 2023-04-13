@@ -84,13 +84,20 @@ background-size: cover;
                     min-height: 300px;
                     margin-bottom: 30px;
                     cursor: pointer;
+                    overflow: hidden;
+                    
                    
     
                     img{
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        transition: .7s;
                         
+                    }
+
+                    img:hover{
+                        transform: scale(1.2);
                     }
                 }
     

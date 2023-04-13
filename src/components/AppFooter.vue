@@ -1,5 +1,6 @@
 <script>
 import NewsLetter from './NewsLetter.vue';
+import Credits from './Credits.vue';
 
 
 export default {
@@ -11,6 +12,7 @@ export default {
 
     components: {
         NewsLetter,
+        Credits,
     }
 }
 
@@ -20,6 +22,8 @@ export default {
 <template>
 
     <NewsLetter></NewsLetter>
+
+    <Credits></Credits>
 
 </template>
 

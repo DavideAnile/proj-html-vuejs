@@ -144,6 +144,7 @@ export default {
             border-radius: 10px;
             box-shadow: 4px 10px 30px lightgray;
             background-color: white;
+            transition: .7s;
             
 
             .circle-border-pass{
@@ -187,6 +188,11 @@ export default {
             }    
                 
 
+        }
+
+        .percentage-card:hover{
+            transform: scale(1.1);
+            cursor: pointer;
         }
         
     }

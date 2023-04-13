@@ -53,7 +53,7 @@ export default {
 
                 <div class="right-up-container">
                     <div id="demos"><i class="fa-solid fa-folder-open"></i> <span> Demos </span> </div>
-                    <div id="sales"> <span id="price"> $ 39 </span> <span> On Sale </span> </div>
+                    <div id="sales"> <span id="price"> <small>$</small> 39 </span> <span> On Sale </span> </div>
                 </div>
                         
 
@@ -244,7 +244,7 @@ export default {
                  }   
     
                 #sales{
-    
+                    position: relative;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -256,6 +256,13 @@ export default {
                     font-size: .7em;
                     font-weight: bold;
                     border-radius: 10px;
+
+                    small{
+                        position: absolute;
+                        top: 2px;
+                        left: 6px;
+                        font-size: .8em;
+                    }
     
                     #price{
                         font-size: 2em;

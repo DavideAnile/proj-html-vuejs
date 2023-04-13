@@ -43,6 +43,8 @@ export default {
         max-width: 500px;
         padding: 10px;
         margin-bottom: 20px;
+        border: 1px solid lightgray;
+        outline: none;
     }
 
     button{
@@ -63,7 +65,7 @@ export default {
     }
 
     div{
-        padding: 20px;
+        padding: 40px;
     }
 }
 
