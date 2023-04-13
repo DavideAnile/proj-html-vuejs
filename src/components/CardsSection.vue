@@ -220,6 +220,12 @@ export default {
                 color: white;
                 background-color: #7abc64;
                 text-transform: uppercase;
+                transition: .7s;
+            }
+
+            button:hover{
+                transform: scale(1.1);
+                cursor: pointer;
             }
         }
     }

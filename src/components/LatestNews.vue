@@ -49,7 +49,7 @@ background-size: cover;
 
     .container{
         position: relative;
-        top: -30px;
+        top: -40px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -70,6 +70,7 @@ background-size: cover;
     
         .cards-container{
             display: flex;
+            gap: 10px;
             
             .card{
                 display: flex;
@@ -79,8 +80,8 @@ background-size: cover;
                 color: gray;
     
                 .img-container{
-                    width: 500px;
-                    height: 300px;
+                    max-width: 500px;
+                    min-height: 300px;
                     margin-bottom: 30px;
                     cursor: pointer;
                    
@@ -89,6 +90,7 @@ background-size: cover;
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        
                     }
                 }
     
@@ -126,7 +128,7 @@ background-size: cover;
         
     #bottom-container-triangle{
             position: relative;
-            top: -30px;
+            top: -40px;
             width: 100%;
             
             img{
