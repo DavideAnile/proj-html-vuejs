@@ -66,6 +66,8 @@ export default {
 
     div{
         padding: 40px;
+        color: gray;
+        letter-spacing: 1px;
     }
 }
 

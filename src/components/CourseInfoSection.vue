@@ -146,7 +146,7 @@ export default {
 
             .btn-container{
 
-                padding: 15px 20px;
+                
                 transition: .5s;
                 
                 
@@ -164,9 +164,10 @@ export default {
                 }
             } 
                 
-            .btn-container:hover{
-                background-color: rgba(84, 84, 233, 0.774);
-                cursor: pointer;
+            .btn-container:hover button{
+                    color: #7abc64;
+                    border: 2px solid #7abc64;
+                    transform: scale(1.1);
             }    
             
         }

@@ -28,7 +28,7 @@ export default {
     
         <div class="up-header my-container">
             <div>We have a {{ percentage }} Successful Pass Rate!</div>
-            <div><i class="fa-solid fa-phone-flip"></i> Give us a call to book your tuition! {{ number }}</div>
+            <div id="number"><i class="fa-solid fa-phone-flip"></i> Give us a call to book your tuition! <a href="">{{ number }}</a></div>
         </div>
         <div class="bottom-header">
             <div class="jumbo-container">
@@ -79,6 +79,18 @@ export default {
         height: 8%;
         background-color: #353637;
         color: rgba(211, 211, 211, 0.733);
+
+        #number{
+
+            a{
+                text-decoration: none;
+                color: rgba(211, 211, 211, 0.733);
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+        }
         
     }
 
@@ -210,11 +222,11 @@ export default {
             }
     
             .right-up-container{
-                position: absolute;
-                top: 85px;
-                right: 10px;
-    
-    
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                z-index: 3;
+                
     
                 display: flex;
                 flex-direction: column;
@@ -222,6 +234,8 @@ export default {
                 gap: 10px;
                 width: 60px;
                 cursor: pointer;
+                
+    
                 
     
                
@@ -235,13 +249,19 @@ export default {
                     width: 100%;
                     height: 60px;
                     border-radius: 10px;
-    
+                    box-shadow: 2px 5px 10px black;
+                    transition: .7s;
+
                     i{
                         font-size: 2em;
                         color: rgb(2, 2, 75);
                     }
     
-                 }   
+                 }
+                 
+                 #demos:hover{
+                    transform: scale(1.1);
+                 }
     
                 #sales{
                     position: relative;
@@ -256,6 +276,8 @@ export default {
                     font-size: .7em;
                     font-weight: bold;
                     border-radius: 10px;
+                    box-shadow: 2px 5px 10px black;
+                    transition: .7s;
 
                     small{
                         position: absolute;
@@ -270,7 +292,11 @@ export default {
                         color: #7abc64;
                     }
     
-                } 
+                }
+                
+                #sales:hover{
+                    transform: scale(1.1);
+                }
                  
             }
             

@@ -78,7 +78,7 @@ export default {
 
     <section class="bottom-section my-container">
         <div class="left-container">
-            <small><i class="fa-regular fa-copyright"></i> Copyright 2012 - 2020 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span>Wordpress</span></small>
+            <small><i class="fa-regular fa-copyright"></i> Copyright 2012 - 2020 | Avada Theme by <span><a href="#">ThemeFusion</a></span> | All Rights Reserved | Powered by <span><a href="#">Wordpress</a></span></small>
         </div>
         <div class="right-container">
             <i class="fa-brands fa-facebook-f"></i>
@@ -185,6 +185,7 @@ export default {
         
         .btn-container{
             padding: 15px 20px;
+            transition: .7s;
             
             button{
                 padding: 10px 20px;
@@ -198,7 +199,8 @@ export default {
         }
 
         .btn-container:hover{
-            background-color: #7abc6477;
+            transform: scale(1.1);
+            background-color: #7abc644d;
             cursor: pointer;
         }
     }
@@ -213,14 +215,33 @@ export default {
     background-color: #1c1d1e;
 
     .left-container{
+
         span{
-            color: #7abc64;
+            
+            a{
+                text-decoration: none;
+                color: #7abc64;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
         }
+            
     }
     .right-container{
         display: flex;
         gap: 15px;
         color: white;
+
+        i{
+            transition: .6s;
+        }
+
+        i:hover{
+            transform: scale(1.5);
+            cursor: pointer;
+        }
     }
     
 }
